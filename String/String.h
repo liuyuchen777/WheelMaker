@@ -24,7 +24,7 @@ class String
         String(u32 len);
         ~String();
     // other function
-        u32 space() const { return space_len; }
+        u32 capacity() const { return space_len; }
         u32 len() const { return actual_len; }
         u32 str_count() const { return num_of_strings; }
         void add(const String &str);
