@@ -17,13 +17,14 @@ void String::add(const String & str)
     else
     {
         char *temp = nullptr;
-        space_len = 2 * (temp_len + actual_len);
+        space_len = 2 * temp_len;
         temp = new char[space_len + 1];
         memset(temp, 0, space_len + 1);
         std::strcat(temp, m_str);
         delete [] m_str;
         std::strcat(temp, str.m_str);
         m_str = temp;
+        actual_len = temp_len;
     }
 }
 
@@ -44,13 +45,14 @@ void String::add(const char *str)
         else
         {
             char *temp = nullptr;
-            space_len = 2 * (temp_len + actual_len);
+            space_len = 2 * temp_len;
             temp = new char[space_len + 1];
             memset(temp, 0, space_len + 1);
             std::strcat(temp, m_str);
             delete [] m_str;
             std::strcat(temp, str);
             m_str = temp;
+            actual_len = temp_len;
         }
     }
 }
@@ -236,13 +238,14 @@ String & String::operator+=(const String &str)
     else
     {
         char *temp = nullptr;
-        space_len = 2 * (temp_len + actual_len);
+        space_len = 2 * temp_len;
         temp = new char[space_len + 1];
         memset(temp, 0, space_len + 1);
         std::strcat(temp, m_str);
         delete [] m_str;
         std::strcat(temp, str.m_str);
         m_str = temp;
+        actual_len = temp_len;
     }
 
     return *this;
@@ -266,13 +269,14 @@ String & String::operator+=(const char *str)
         else
         {
             char *temp = nullptr;
-            space_len = 2 * (temp_len + actual_len);
+            space_len = 2 * temp_len;
             temp = new char[space_len + 1];
             memset(temp, 0, space_len + 1);
             std::strcat(temp, m_str);
             delete [] m_str;
             std::strcat(temp, str);
             m_str = temp;
+            actual_len = temp_len;
         }
 
         return *this;
@@ -306,4 +310,13 @@ bool operator>(const String &st1, const String &st2)
 bool operator==(const String &st1, const String &st2)
 {
     return (std::strcmp(st1.m_str, st2.m_str) == 0);
+}
+
+String operator+(const char *str1, const String &str2)
+{
+    String str(str2.actual_len + std::strlen(str1));
+    str.add(str1);
+    str.add(str2);
+
+    return str;
 }

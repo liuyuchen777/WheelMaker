@@ -5,7 +5,8 @@
 using namespace std;
 
 #define CHECK(str) do{\
-    cout << "len of string: " << str.len() << "\tcapacity of str: " << str.capacity() << endl\
+    cout << str << endl;\
+    cout << "len of string: " << str.len() << "\tcapacity of str: " << str.capacity() << endl;\
 }while(0)
 
 #define TEST   ADD
@@ -22,11 +23,17 @@ int main(void)
     cout << str1 << endl;
     cout << str2 << endl;
 #elif TEST == ADD
-    String str1;
-    String str2 = "lyc!";
-    String str3 = "zzh!";
-    str1 = str2 + str3;
-    cout << str1 << endl;
-    CHECK();
+    String str1 = "lyc!";
+    String str2 = "zzh!";
+    String str3 = "dddddddddddddddddddddddddddddd";
+    str1 += str2;
+    CHECK(str1);
+    str1 += "ssssssssssssssssssss";
+    CHECK(str1);
+    str1 += str3;
+    CHECK(str1);
+    String str4;
+    str4 = "lyc!" + str2;
+    CHECK(str4);
 #endif
 }
