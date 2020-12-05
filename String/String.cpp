@@ -69,7 +69,10 @@ String::String()
 
 String::String(u32 len)
 {
-    space_len = len;
+    if (len > min_len)
+        space_len = len;
+    else if (len <= min_len)
+        space_len = min_len;
     actual_len = 0;
     m_str = new char[space_len + 1];
     memset(m_str, 0, space_len + 1);
@@ -319,4 +322,36 @@ String operator+(const char *str1, const String &str2)
     str.add(str2);
 
     return str;
+}
+
+String String::operator*(const u32 num)
+{
+    u32 i = 0, j = 0;
+    String mstr(num * actual_len);
+    mstr.set_actual_len(num * actual_len);
+    for (i = 0; i < num; i++)
+    {
+        for (j = 0; j < actual_len; j++)
+        {
+            mstr[(actual_len * i) + j] = m_str[j];
+        }
+    }
+
+    return mstr;
+}
+
+String operator*(const u32 num, const String & str)
+{
+    u32 i = 0, j = 0;
+    String mstr(num * str.len());
+    mstr.set_actual_len(num * str.len());
+    for (i = 0; i < num; i++)
+    {
+        for (j = 0; j < str.len(); j++)
+        {
+            mstr[(str.len() * i) + j] = str[j];
+        }
+    }
+
+    return mstr;
 }
