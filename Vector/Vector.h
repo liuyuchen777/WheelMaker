@@ -10,10 +10,11 @@ template<typename T>
 class Vector
 {
 private:   
-    T*      array;
-    u32     theSize;
-    u32     theCapacity;
-    static const int WALK_LENGTH = 32;
+    T*               array;
+    u32              theSize;
+    u32              theCapacity;
+    // when capacity is not enough, increase size
+    static const int WALK_LENGTH = 32;  
     T* allocator(u32 size) { return new T[size]; }
     void deallocator(T* arr)
     {
@@ -23,7 +24,7 @@ private:
 public:
     // default constructor
     Vector() : theSize(0), theCapacity(0), array(nullptr) {}
-    Vector(u32 n);
+    Vector(u32 num);
     // copy constructor
     Vector(const Vector<T> & other);
     // = operator
