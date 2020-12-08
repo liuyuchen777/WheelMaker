@@ -1,5 +1,5 @@
 target=vec
-$(target): Vector.hpp VectorTest.cpp
+$(target): Vector.h VectorTest.cpp
 	g++ $^ -o $@
 
 .PHONY: clean
