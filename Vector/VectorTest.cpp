@@ -1,13 +1,12 @@
-#include "Vector.h"
+#include "Vector.hpp"
+#include <iostream>
 
-#define BASIC       0
-#define TEST        BASIC
+using namespace std;
 
 int main(void)
 {
-#if TEST == BASIC
-    
-#endif
+    Vector<int> v1(20);
+    v1.vec_state();
 
     return 0;
 }
