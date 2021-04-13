@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/d/Users/Local_Lab/WheelMaker/Hash/v1/hash.cpp
+./hash.h
+/mnt/d/Users/Local_Lab/WheelMaker/Hash/v1/hash.h
+iostream
+-
+string
+-
+
+/mnt/d/Users/Local_Lab/WheelMaker/Hash/v1/hash.h
+iostream
+-
+string
+-
+
+/mnt/d/Users/Local_Lab/WheelMaker/Hash/v1/hashTest.cpp
+gtest/gtest.h
+-
+./hash.h
+/mnt/d/Users/Local_Lab/WheelMaker/Hash/v1/hash.h
+

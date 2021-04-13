@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="hash_v2"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\Hash\;CMake Files\Hash\v1\;CMake Files\Hash\v2\;CMake Files\String\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/mnt/d/Users/Local_Lab/WheelMaker/cmake-build-debug/Hash/v2"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/d/Users/Local_Lab/WheelMaker/cmake-build-debug/Hash/v2/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/d/Users/Local_Lab/WheelMaker/cmake-build-debug/Hash/v2/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/d/Users/Local_Lab/WheelMaker/cmake-build-debug/Hash/v2/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/d/Users/Local_Lab/WheelMaker/cmake-build-debug/Hash/v2/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Hash_v1">
+				<Option output="/mnt/d/Users/Local_Lab/WheelMaker/cmake-build-debug/Hash/v2/Hash_v1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/d/Users/Local_Lab/WheelMaker/cmake-build-debug/Hash/v2"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/d/Users/Local_Lab/WheelMaker/cmake-build-debug/Hash/v2/Makefile&quot;  VERBOSE=1 Hash_v1"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/d/Users/Local_Lab/WheelMaker/cmake-build-debug/Hash/v2/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/d/Users/Local_Lab/WheelMaker/cmake-build-debug/Hash/v2/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/d/Users/Local_Lab/WheelMaker/cmake-build-debug/Hash/v2/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Hash_v1/fast">
+				<Option output="/mnt/d/Users/Local_Lab/WheelMaker/cmake-build-debug/Hash/v2/Hash_v1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/d/Users/Local_Lab/WheelMaker/cmake-build-debug/Hash/v2"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/mnt/d/Users/Local_Lab/WheelMaker/cmake-build-debug/Hash/v2/Makefile&quot;  VERBOSE=1 Hash_v1/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/mnt/d/Users/Local_Lab/WheelMaker/cmake-build-debug/Hash/v2/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/mnt/d/Users/Local_Lab/WheelMaker/cmake-build-debug/Hash/v2/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/mnt/d/Users/Local_Lab/WheelMaker/cmake-build-debug/Hash/v2/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/mnt/d/Users/Local_Lab/WheelMaker/Hash/v2/hash.cpp">
+			<Option target="Hash_v1"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/Local_Lab/WheelMaker/Hash/v2/hash.h">
+			<Option target="Hash_v1"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/Local_Lab/WheelMaker/Hash/v2/hashTest.cpp">
+			<Option target="Hash_v1"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/Local_Lab/WheelMaker/String/String_test.cpp">
+			<Option target="Hash_v1"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/Local_Lab/WheelMaker/Vector/Vector.cpp">
+			<Option target="Hash_v1"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/Local_Lab/WheelMaker/Vector/Vector.h">
+			<Option target="Hash_v1"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/Local_Lab/WheelMaker/Vector/Vector_test.cpp">
+			<Option target="Hash_v1"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/Local_Lab/WheelMaker/Vector/qucik_test.cpp">
+			<Option target="Hash_v1"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/Local_Lab/WheelMaker/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/Local_Lab/WheelMaker/Hash/v1/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Hash\v1\"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/Local_Lab/WheelMaker/Hash/v2/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Hash\v2\"/>
+		</Unit>
+		<Unit filename="/mnt/d/Users/Local_Lab/WheelMaker/String/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\String\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

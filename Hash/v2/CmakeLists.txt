@@ -1,6 +1,6 @@
 cmake_minimum_required (VERSION 2.8)
 
-project(hash)
+project(hash_v2)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -std=c++11")
 
 find_package(GTest REQUIRED)
@@ -8,9 +8,9 @@ find_package(Threads REQUIRED)
 
 include_directories(${GTEST_INCLUDE_DIRS})
 
-add_executable(Hash hash.h hash.cpp hashTest.cpp)
+add_executable(Hash_v1 hash.h hash.cpp hashTest.cpp ../../Vector/Vector.cpp ../../Vector/Vector_test.cpp ../../Vector/qucik_test.cpp ../../String/String_test.cpp)
 
-target_link_libraries(Hash ${GTEST_BOTH_LIBRARIES})
-target_link_libraries(Hash ${CMAKE_THREAD_LIBS_INIT})
-add_test(Test Hash)
+target_link_libraries(Hash_v1 ${GTEST_BOTH_LIBRARIES})
+target_link_libraries(Hash_v1 ${CMAKE_THREAD_LIBS_INIT})
+add_test(Test Hash_v1)
 enable_testing()

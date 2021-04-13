@@ -1,0 +1,4 @@
+/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /mnt/d/Users/Local_Lab/WheelMaker
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /mnt/d/Users/Local_Lab/WheelMaker/cmake-build-debug

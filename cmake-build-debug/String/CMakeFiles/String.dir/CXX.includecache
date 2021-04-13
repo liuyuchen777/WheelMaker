@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/d/Users/Local_Lab/WheelMaker/String/String.h
+iostream
+-
+
+/mnt/d/Users/Local_Lab/WheelMaker/String/String_test.cpp
+iostream
+-
+String.h
+/mnt/d/Users/Local_Lab/WheelMaker/String/String.h
+gtest/gtest.h
+-
+
